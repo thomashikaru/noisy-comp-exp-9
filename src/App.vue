@@ -492,11 +492,13 @@ export default {
 
     // console.log(updatedShuffledItems);
 
-    // const updatedTrials = _.sampleSize(updatedShuffledItems, 3);
+    const updatedTrials = _.sampleSize(updatedShuffledItems, 5);
+
     return {
       isCursorMoving: false,
       practiceTrials: practice,
-      trials: updatedShuffledItems,
+      // trials: updatedShuffledItems,
+      trials: updatedTrials,
       currentIndex: null,
       showFirstDiv: true,
       mousePosition: {
