@@ -7,6 +7,7 @@ export default {
   contactEmail: "thclark@mit.edu",
   // Either 'debug', 'directLink' or 'prolific'
   // mode: "prolific",
-  mode: "debug",
+  // mode: "debug",
+  mode: "directLink",
   language: "en",
 };
