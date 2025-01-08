@@ -486,19 +486,20 @@ export default {
       };
     });
 
+    const numFillers = 20;
     const updatedShuffledItems = _.shuffle(
-      updatedItems.concat(_.sampleSize(updatedFillers, 40))
+      updatedItems.concat(_.sampleSize(updatedFillers, numFillers))
     );
 
     // console.log(updatedShuffledItems);
 
-    const updatedTrials = _.sampleSize(updatedShuffledItems, 5);
+    // const updatedTrials = _.sampleSize(updatedShuffledItems, 5);
 
     return {
       isCursorMoving: false,
       practiceTrials: practice,
-      // trials: updatedShuffledItems,
-      trials: updatedTrials,
+      trials: updatedShuffledItems,
+      // trials: updatedTrials,
       currentIndex: null,
       showFirstDiv: true,
       mousePosition: {
